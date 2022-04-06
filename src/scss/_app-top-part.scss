@@ -1,0 +1,41 @@
+.app-header {
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px 25px 10px 10px;
+    background-image: linear-gradient(to right, $light-violet, $light-magenta);
+    padding: 40px 20px 20px;
+    h2 {
+        font-size: $user-name;
+        font-weight: $medium;
+        color: $white;
+    }
+    
+    p {
+        font-size: $status-size;
+        font-weight: $regular;
+        color: rgba(255, 255, 255, 0.505);
+    }
+    position: relative;
+    z-index: 1;
+}
+
+.user-info::before {
+    content: '';
+    width: 200px;
+    height: 32px;
+    border-radius: 13px 15px;
+    position: absolute;
+    top: -0.5rem;
+    right: 3.8rem;
+    background-color: $white;
+}
+
+.user-img {
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid $white;
+}
+
+.user-info, .user-img {
+    margin-left: -7rem;
+}

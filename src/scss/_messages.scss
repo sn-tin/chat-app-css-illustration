@@ -1,0 +1,154 @@
+.messages {
+    background-color: $app-bg;
+    padding: 30px 15px 15px;
+    border-radius: 0 0 30px 30px;
+    p {
+        font-weight: $regular;
+        font-size: 0.7rem;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+    position: relative;
+    top: -12px;
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+/* Receiver Chat */
+
+.receiver {
+    background-color: hsla(280, 29%, 90%, 0.61);
+    color: $chat-on-left;
+    width: 60%;
+    border-radius: 20px 20px 20px 10px;
+}
+
+/* Sender Chat */
+
+.sender {
+    color: $chat-on-right;
+    width: 80%;
+    p {
+        background-color: $white;
+        width: 75%;
+        border-radius: 20px 20px 10px 20px;
+        position: relative;
+        left: 119px;
+    }
+    .inquiry {
+        width: 48%;
+        position: relative;
+        left: 181px;
+    }
+}
+
+.sender-messages {
+    margin: 20px 0;
+}
+
+.sender-img {
+    background-color: transparent;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 5px;
+    text-align: left;
+    position: relative;
+    left: 130px;
+}
+
+/* Price */
+
+.price {
+    color: $white;
+    background-image: linear-gradient(to right, $light-magenta, $light-violet);
+    width: 70%;
+    border-radius: 12px 12px 12px 5px;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-weight: $regular;
+        margin-left: -40px;
+    }  
+    .time-min {
+        margin-left: -30px;
+    }  
+    .time-hr {
+        margin-left: -50px;
+    }
+    span {
+        font-weight: $bold;
+    }
+}
+
+/* Type Message */
+
+form {
+
+    input {
+        margin: 20px 0 0;
+    }
+
+    button {
+        background-color: $submit-btn-bg;
+        border: none;
+        padding: 2px 11px;
+        position: absolute;
+        bottom: 19px;
+        right: 20px;
+    }
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+
+input::placeholder { /* Most modern browsers support this now. */
+    color:    $placeholder;
+    font-size: 0.7rem;
+    opacity: 0.2;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+  }
+  
+//   .form-control + .form-control {
+//     margin-top: 1em;
+//   }
+
+.form-control {
+    border: none;
+}

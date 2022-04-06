@@ -1,0 +1,22 @@
+.description {
+    width: 500px;
+    h1 {
+        color: $h1-color;
+        font-size: clamp(2rem, 2.5vw, 2.9rem);;
+        margin-bottom: 20px;
+    }
+    p {
+        color: $p-color;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .description {
+        width: 300px;
+        text-align: center;
+    }
+
+}

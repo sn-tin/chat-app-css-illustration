@@ -1,0 +1,35 @@
+main::before {
+    content: '';
+    width: 575px;
+    height: 90vh;
+    background-image: linear-gradient(to bottom left, $light-magenta, $light-violet);
+    border-radius: 0 0 300px 300px;
+    position: fixed;
+    left: -100px;
+    z-index: -5;
+}
+
+main::after {
+    content: '';
+    width: 650px;
+    height: 85vh;
+    background-color: hsla(270, 20%, 96%, 0.305);
+    border-radius: 300px 300px 0 0;
+    position: fixed;
+    right: -200px;
+    bottom: 0;
+    z-index: -10;
+}
+
+@media (max-width: 768px) {
+    main::before {
+        width: 300px;
+        height: 50vh;
+    }
+
+    main::after {
+        width: 410px;
+        height: 50vh;
+        background-color: hsla(0, 0%, 0%, 0.305);
+    }
+}

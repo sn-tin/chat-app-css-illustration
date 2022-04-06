@@ -1,0 +1,51 @@
+.mobile-content {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-50%);
+    // align-items: center;
+    // gap: 0 100px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0 100px;
+}
+
+.application {
+    background-color: $white;
+    width: 350px;
+    border-radius: 30px;
+    padding: 12px 12px 2px;
+    position: relative;
+}
+
+.shrink{
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    transform:scale(0.9);
+}
+
+@media (max-width: 768px) {
+    .mobile-content {
+        // position: absolute;
+        // top: 0;
+        // bottom: 100%;
+        // left: 50%;
+        // transform: translateX(-50%) translateY(-50%);
+        // align-items: center;
+        gap: 80px 0;
+    }
+
+    .shrink{
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    
+
+}
+
+@import './app-top-part';
+@import './messages';
