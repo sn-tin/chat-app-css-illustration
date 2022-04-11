@@ -1,21 +1,25 @@
 {
-  "name": "chat-app-css-illustration-master",
+  "name": "chat-app-css-illustration",
   "version": "1.0.0",
   "description": "![Design preview for the Chat app CSS illustration coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
-  "targets": {
-    "main": false
-  },
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sn-tin/chat-app-css-illustration.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sn-tin/chat-app-css-illustration/issues"
+  },
+  "homepage": "https://github.com/sn-tin/chat-app-css-illustration#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.2",
-    "bundler": "^0.8.0",
-    "parcel": "^2.3.2"
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.50.0"
   }
 }
